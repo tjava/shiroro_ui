@@ -30,6 +30,27 @@ class DataModel {
   @JsonKey(name: "emergency_drills")
   String? emergency_drills;
 
+  @JsonKey(name: "c_manhours_completed")
+  String? c_manhours_completed;
+
+  @JsonKey(name: "c_fatalities")
+  String? c_fatalities;
+
+  @JsonKey(name: "c_near_misses_reported")
+  String? c_near_misses_reported;
+
+  @JsonKey(name: "c_lost_time_incident")
+  String? c_lost_time_incident;
+
+  @JsonKey(name: "c_environmental_incidents")
+  String? c_environmental_incidents;
+
+  @JsonKey(name: "c_first_aid_case")
+  String? c_first_aid_case;
+
+  @JsonKey(name: "c_emergency_drills")
+  String? c_emergency_drills;
+
   @JsonKey(name: "time")
   String? time;
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:pop_alert/pop_alert.dart';
 import 'package:shiroro_ui/constants/colors.dart';
@@ -125,6 +126,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: manhoursCompletedCumulativeController,
@@ -149,6 +153,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -182,6 +189,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: fatalitiesCumulativeController,
@@ -205,6 +215,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -249,6 +262,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: nearMissesReportedCumulativeController,
@@ -273,6 +289,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -317,6 +336,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: lostTimeIncidentCumulativeController,
@@ -341,6 +363,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -385,6 +410,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: environmentalIncidentsCumulativeController,
@@ -409,6 +437,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -453,6 +484,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: firstAidCaseCumulativeController,
@@ -476,6 +510,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -520,6 +557,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(2),
+                      ],
                     ),
                     TextField(
                       controller: emergencyDrillsCumulativeController,
@@ -544,6 +584,9 @@ class _EditTableState extends State<EditTable> {
                       ),
                       textAlign: TextAlign.center,
                       textAlignVertical: TextAlignVertical.center,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ],
                     ),
                   ],
                 ),
@@ -562,6 +605,13 @@ class _EditTableState extends State<EditTable> {
                   environmentalIncidentsController.text,
                   firstAidCaseController.text,
                   emergencyDrillsController.text,
+                  manhoursCompletedCumulativeController.text,
+                  fatalitiesCumulativeController.text,
+                  nearMissesReportedCumulativeController.text,
+                  lostTimeIncidentCumulativeController.text,
+                  environmentalIncidentsCumulativeController.text,
+                  firstAidCaseCumulativeController.text,
+                  emergencyDrillsCumulativeController.text,
                 ]);
 
                 PopAlert.loadingAlert(context: context);

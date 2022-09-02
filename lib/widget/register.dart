@@ -47,17 +47,6 @@ class _RegisterState extends State<Register>
         padding: const EdgeInsets.all(10),
         child: Column(
           children: <Widget>[
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: Lottie.asset(
-                'assets/animations/register.json',
-                controller: controller,
-                onLoaded: (composition) {
-                  controller.repeat();
-                },
-              ),
-            ),
             Container(
               alignment: Alignment.center,
               padding: const EdgeInsets.only(bottom: 20),
@@ -71,7 +60,7 @@ class _RegisterState extends State<Register>
             SizedBox(
               width: 400,
               child: TextField(
-                controller: nameController,
+                controller: emailController,
                 decoration: InputDecoration(
                   prefixIcon: Icon(
                     Icons.person,
@@ -86,33 +75,7 @@ class _RegisterState extends State<Register>
                       color: green,
                     ),
                   ),
-                  labelText: 'Full Name',
-                  floatingLabelStyle: TextStyle(
-                    color: green,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 15),
-            SizedBox(
-              width: 400,
-              child: TextField(
-                controller: emailController,
-                decoration: InputDecoration(
-                  prefixIcon: Icon(
-                    Icons.alternate_email,
-                    color: green,
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(
-                      color: green,
-                    ),
-                  ),
-                  labelText: 'Email',
+                  labelText: 'Username',
                   floatingLabelStyle: TextStyle(
                     color: green,
                   ),
@@ -140,6 +103,32 @@ class _RegisterState extends State<Register>
                     ),
                   ),
                   labelText: 'Password',
+                  floatingLabelStyle: TextStyle(
+                    color: green,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 15),
+            SizedBox(
+              width: 400,
+              child: TextField(
+                controller: nameController,
+                decoration: InputDecoration(
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: green,
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: BorderSide(
+                      color: green,
+                    ),
+                  ),
+                  labelText: 'Registration Token',
                   floatingLabelStyle: TextStyle(
                     color: green,
                   ),

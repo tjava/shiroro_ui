@@ -45,17 +45,6 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
         padding: const EdgeInsets.all(10),
         child: Column(
           children: <Widget>[
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: Lottie.asset(
-                'assets/animations/login.json',
-                controller: controller,
-                onLoaded: (composition) {
-                  controller.repeat();
-                },
-              ),
-            ),
             Container(
               alignment: Alignment.center,
               padding: const EdgeInsets.only(bottom: 20),
@@ -72,7 +61,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                 controller: emailController,
                 decoration: InputDecoration(
                   prefixIcon: Icon(
-                    Icons.alternate_email,
+                    Icons.person,
                     color: green,
                   ),
                   border: OutlineInputBorder(
@@ -84,7 +73,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                       color: green,
                     ),
                   ),
-                  labelText: 'Email',
+                  labelText: 'Username',
                   floatingLabelStyle: TextStyle(
                     color: green,
                   ),

@@ -41,7 +41,7 @@ class _PopUpState extends State<PopUp> with SingleTickerProviderStateMixin {
         child: ScaleTransition(
           scale: scaleAnimation,
           child: Container(
-            height: 400,
+            height: 350,
             width: 350,
             decoration: ShapeDecoration(
               shape: RoundedRectangleBorder(
@@ -57,7 +57,7 @@ class _PopUpState extends State<PopUp> with SingleTickerProviderStateMixin {
       child: ScaleTransition(
         scale: scaleAnimation,
         child: Container(
-          height: 470,
+          height: 420,
           width: 350,
           decoration: ShapeDecoration(
             shape: RoundedRectangleBorder(

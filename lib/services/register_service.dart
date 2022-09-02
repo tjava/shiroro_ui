@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class RegisterService {
   late Dio _dio;
 
-  final String baseUrl = "http://api.nspcompany.tk/public/api/";
+  final String baseUrl = "https://nspcompanyapi.tk/api/";
 
   RegisterService() {
     _dio = Dio(

@@ -33,6 +33,26 @@ class EditTableController {
           data[5] == "" ? homeController.firstAidCase.value : data[5];
       homeController.emergencyDrills.value =
           data[6] == "" ? homeController.emergencyDrills.value : data[6];
+      homeController.cumulativeManhoursCompleted.value = data[7] == ""
+          ? homeController.cumulativeManhoursCompleted.value
+          : data[7];
+      homeController.cumulativeFatalities.value =
+          data[8] == "" ? homeController.cumulativeFatalities.value : data[8];
+      homeController.cumulativeNearMissesReported.value = data[9] == ""
+          ? homeController.cumulativeNearMissesReported.value
+          : data[9];
+      homeController.cumulativeLostTimeIncident.value = data[10] == ""
+          ? homeController.cumulativeLostTimeIncident.value
+          : data[10];
+      homeController.cumulativeEnvironmentalIncidents.value = data[11] == ""
+          ? homeController.cumulativeEnvironmentalIncidents.value
+          : data[11];
+      homeController.cumulativeFirstAidCase.value = data[12] == ""
+          ? homeController.cumulativeFirstAidCase.value
+          : data[12];
+      homeController.cumulativeEmergencyDrills.value = data[13] == ""
+          ? homeController.cumulativeEmergencyDrills.value
+          : data[13];
 
       status.value = json.decode(response.data)['status_code'];
       // print(json.decode(response.data));

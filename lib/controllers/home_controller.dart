@@ -53,6 +53,15 @@ class HomeController extends GetxController {
       firstAidCase.value = dataModel!.first_aid_case!;
       emergencyDrills.value = dataModel!.emergency_drills!;
 
+      cumulativeManhoursCompleted.value = dataModel!.c_manhours_completed!;
+      cumulativeFatalities.value = dataModel!.c_fatalities!;
+      cumulativeNearMissesReported.value = dataModel!.c_near_misses_reported!;
+      cumulativeLostTimeIncident.value = dataModel!.c_lost_time_incident!;
+      cumulativeEnvironmentalIncidents.value =
+          dataModel!.c_environmental_incidents!;
+      cumulativeFirstAidCase.value = dataModel!.c_first_aid_case!;
+      cumulativeEmergencyDrills.value = dataModel!.c_emergency_drills!;
+
       String time = dataModel!.time!;
       day.value = time[8] + time[9];
       month.value = time[5] + time[6];
@@ -85,6 +94,15 @@ class HomeController extends GetxController {
     environmentalIncidents.value = dataModel!.environmental_incidents!;
     firstAidCase.value = dataModel!.first_aid_case!;
     emergencyDrills.value = dataModel!.emergency_drills!;
+
+    cumulativeManhoursCompleted.value = dataModel!.c_manhours_completed!;
+    cumulativeFatalities.value = dataModel!.c_fatalities!;
+    cumulativeNearMissesReported.value = dataModel!.c_near_misses_reported!;
+    cumulativeLostTimeIncident.value = dataModel!.c_lost_time_incident!;
+    cumulativeEnvironmentalIncidents.value =
+        dataModel!.c_environmental_incidents!;
+    cumulativeFirstAidCase.value = dataModel!.c_first_aid_case!;
+    cumulativeEmergencyDrills.value = dataModel!.c_emergency_drills!;
 
     String time = dataModel!.time!;
     day.value = time[8] + time[9];

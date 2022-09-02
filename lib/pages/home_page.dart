@@ -475,6 +475,17 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    CustomText(
+                      text: 'SAFETY FIRST',
+                      color: black,
+                      size: 26,
+                      weight: FontWeight.bold,
+                    ),
+                  ],
+                ),
                 const SizedBox(height: 40),
                 Center(
                   child: Listener(
